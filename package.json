@@ -1,0 +1,22 @@
+{
+  "name": "node-encrypter",
+  "version": "1.0.0",
+  "description": "A Node.js ransomware implementation.",
+  "main": "build/encrypter.js",
+  "scripts": {
+    "build": "tsc",
+    "encrypt": "node build/encrypter.js",
+    "decrypt": "node build/decrypter.js",
+    "encrypt-exe": "pkg build/encrypter.js -t node12-win-x64 --output build/encrypter.exe",
+    "decrypt-exe": "pkg build/decrypter.js -t node12-win-x64 --output build/decrypter.exe"
+  },
+  "author": "rulyox",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^13.11.1",
+    "pkg": "^4.4.6"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
